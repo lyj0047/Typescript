@@ -1,9 +1,3 @@
-function logName(name: string) {
-  console.log(name);
-}
-
-logName("Jack");
-
 let studentID: number = 12345;
 let studentName: string = "Jenny Kim";
 let age: number = 21;
