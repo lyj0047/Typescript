@@ -10,12 +10,33 @@ let age: number = 21;
 let subject: string = "Javascript";
 let courseCompleted: boolean = false;
 
-function getStudentDetails(studentID: number): {
+let student1 = {
+  studentID: 121212,
+  studentName: "Janet Jackson",
+  age: 30,
+  gender: "Female",
+  subject: "Mongo DB",
+  courseCompleted: false,
+};
+interface Student {
   studentID: number;
   studentName: string;
-  age: number;
+  age?: number;
+  gender: string;
   subject: string;
-  createDate: Date;
-} {
-  return null;
+  courseCompleted: boolean;
 }
+
+function getStudentDetails(studentID: number): Student {
+  return {
+    studentID: 123455,
+    studentName: "Mark Jacobs",
+    gender: "male",
+    subject: "Node JS",
+    courseCompleted: true,
+  };
+}
+
+function saveStudentDetails(student: Student): void {}
+
+saveStudentDetails(student1);
